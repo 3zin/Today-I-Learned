@@ -178,13 +178,26 @@ View로 입력된 사용자 입력을 Model에 전달하고, Model에서 갱신�
 
 ## MVC의 단점 (어쩌면 iOS MVC의 단점)
 
+![normal_MVC](/Users/3zin/Documents/Today-I-Learned/design_pattern/normal_MVC.png)
+
+>  일반적인 MVC
+
+
+
+![apple_MVC](/Users/3zin/Documents/Today-I-Learned/design_pattern/apple_MVC.png)
+
+> Apple의 MVC
+
+---
+
 - Apple의 Cocoa MVC에서, View와 Controller는 뒤엉켜서 잘 분리되지 않는다 
+
 - 기본적으로 View와 Controller는 하나의 덩어리인 'ViewController' 로 동작한다 
 - 기본적으로 Cocoa MVC의 Controller는 UIViewController를 상속하고, 따라서 ViewDidLoad등의 View LifeCycle Delegation에 필연적으로 종속된다. 
 - View의 생명주기와 관련된 코드가 모두 Controller에 위치하고, 모델이 담당해야 할 네트워크 통신, 다운로드, 데이터 처리 역시 ViewController에 위치하게 되는 경우가 많다. 
 - 필연적으로 Controller가 비대해진다 (**Massive View Controller**)
 
-
+---
 
 이로 인해 발생하는 문제점들 
 
@@ -229,3 +242,5 @@ https://medium.com/nspoons/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-archite
 http://cescjuno.tistory.com/entry/IOS-architecture
 
 https://academy.realm.io/kr/posts/krzysztof-zablocki-mDevCamp-ios-architecture-mvvm-mvc-viper/
+
+http://labs.brandi.co.kr/2018/02/21/kimjh.html
