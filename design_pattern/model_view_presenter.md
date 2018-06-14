@@ -73,7 +73,7 @@ view.person = model;
 - MVP는 이와 같은 Cocoa MVC의 한계를 극복하기 위해 고안된 디자인 패턴이다
 - Model-View-**<u>Presenter</u>**
 
-![MVP_iOS](/Users/3zin/Documents/Today-I-Learned/design_pattern/model_view_presenter_img/MVP_iOS.png)
+![MVP_iOS](./model_view_presenter_img/MVP_iOS.png)
 
 
 
@@ -94,7 +94,7 @@ view.person = model;
 - 예시를 살펴보자 
 
 ```swift
-import UIKit struct Person { // Model 
+import UIKit struct Person{ // Model 
 	let firstName: String 
     let lastName: String 
 } 
