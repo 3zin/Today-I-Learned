@@ -15,7 +15,7 @@
 
 애플리케이션의 모든 정보, 비즈니스 로직, 데이터베이스, 네트워크 등을 담당하고 데이터를 정합하게 가공한다
 
-원칙적으로 뷰나 컨트롤러에 접근할 수 없다. 특히 View에 대한 참조정보를 가지고 있어서는 안된다
+원칙적으로 뷰나 컨트롤러에 접근할 수 없다. 특히 View에 대한 참조정보를 가지고 있어서는 안된다(이는 Apple의 MVC에서 강조되는 MVP적 특징이다)
 
 자신의 컨트롤러가 누구인지 알 수 없다
 
@@ -42,6 +42,8 @@ cf. 비즈니스 로직이란 업무에 필요한 데이터 처리를 수행하�
 Model과 View에 대한 참조 정보를 갖고 있어야 한다. Model이나 View의 변경을 모니터링해야 한다
 
 View로 입력된 사용자 입력을 Model에 전달하고, Model에서 갱신된 값을 View로 전달한다
+
+컨트롤러:뷰 의 관계는 1:n의 관계이다
 
 가장 재사용이 힘든 편
 
@@ -191,11 +193,11 @@ View로 입력된 사용자 입력을 Model에 전달하고, Model에서 갱신�
 ---
 
 - Apple의 Cocoa MVC에서, View와 Controller는 뒤엉켜서 잘 분리되지 않는다 
-
 - 기본적으로 View와 Controller는 하나의 덩어리인 'ViewController' 로 동작한다 
 - 기본적으로 Cocoa MVC의 Controller는 UIViewController를 상속하고, 따라서 ViewDidLoad등의 View LifeCycle Delegation에 필연적으로 종속된다. 
-- View의 생명주기와 관련된 코드가 모두 Controller에 위치하고, 모델이 담당해야 할 네트워크 통신, 다운로드, 데이터 처리 역시 ViewController에 위치하게 되는 경우가 많다. 
+- View의 생명주기와 관련된 코드가 모두 Controller에 위치하고, 모델이 담당해야 할 네트워크 통신, 다운로드, 데이터 처리 역시 ViewController에 위치하게 되는 경우가 많다. ViewDidLoad() 등의 생성주기 함수가 길어진다
 - 필연적으로 Controller가 비대해진다 (**Massive View Controller**)
+- 한마디로 M + VC의 느낌
 
 ---
 
@@ -211,7 +213,7 @@ View로 입력된 사용자 입력을 Model에 전달하고, Model에서 갱신�
 
 ## 해결방안 
 
-- MVP
+- [MVP](./model_view_presenter.md)
 - MVVM
 - VIPER
 - ReSwift
