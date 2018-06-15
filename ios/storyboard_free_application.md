@@ -6,9 +6,7 @@
 
 
 
-### **StoryBoard**
-
----
+## 문제의 **StoryBoard**
 
 -  스토리보드 포맷의 시초는 '인터페이스 빌더'  
 - 초기 iOS 인터페이스 구성 파일 확장자는 nib(nextstep interface builder) -> xib(xcode interface builder)
@@ -100,6 +98,12 @@ sampleView.heightAnchor.constraintEqualToAnchor(view.heightAnchor).active = true
   > ***UI 구성에 세 개의 툴이 있다는건 행운이다***. 
   >
   > Xcode는 같은 프로젝트 내에서 동시에 “효율적”으로 사용할 수있는 이 모든 툴을 제공한다.
+
+
+
+- 아직 스토리보드의 도움 없이 프로젝트를 만들 실력이 되지 않는다. 일단 공부하고, 인턴 전에 좋은 소스코드를 뜯어보자
+
+
 
 
 
