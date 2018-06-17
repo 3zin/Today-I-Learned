@@ -63,3 +63,10 @@
 - https://www.raywenderlich.com/160651/design-patterns-ios-using-swift-part-12
 - https://www.raywenderlich.com/160653/design-patterns-ios-using-swift-part-22
 
+---
+
+> 2018.6.16.
+
+- 뜻밖의 시험이랑 프로젝트 때문에 공부할 시간이 없다
+- 틈틈이 개발자 문서를 읽자. 어차피 나중에 읽어야 하니까
+- 생각해보니 정보처리 산업기사 공부도 해야 함
