@@ -21,6 +21,8 @@
 
 [iOS](https://github.com/3zin/Today-I-Learned/tree/master/ios)
 
+[Study Plan](https://github.com/3zin/Today-I-Learned/tree/master/study_planner)
+
 ## Inspired By
 
 @ [aweekj](https://github.com/aweekj/TIL)
