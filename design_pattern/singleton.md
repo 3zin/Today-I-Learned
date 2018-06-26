@@ -1,6 +1,6 @@
 # Singleton
 
-![singleton](./singleton_img/singleton.jpeg)
+![singleton](./design_pattern_img/singleton_img/singleton.jpeg)
 
 - 소프트웨어 생성 디자인 패턴
 - 어떤 클래스의 인스턴스가 <u>**단 한개**</u>만 존재하도록 강제하는 생성 디자인 패턴

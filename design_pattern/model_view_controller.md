@@ -51,7 +51,7 @@ View로 입력된 사용자 입력을 Model에 전달하고, Model에서 갱신�
 
 ## MVC in iOS
 
-![스크린샷 2018-06-13 오후 11.16.01](model_view_controller_img/MVC_ios.png)
+![스크린샷 2018-06-13 오후 11.16.01](./design_pattern_img/model_view_controller_img/MVC_ios.png)
 
 
 
@@ -180,13 +180,13 @@ View로 입력된 사용자 입력을 Model에 전달하고, Model에서 갱신�
 
 ## MVC의 단점 (어쩌면 iOS MVC의 단점)
 
-![normal_MVC](model_view_controller_img/normal_MVC.png)
+![normal_MVC](./design_pattern_img/model_view_controller_img/normal_MVC.png)
 
 >  일반적인 MVC
 
 
 
-![apple_MVC](model_view_controller_img/apple_MVC.png)
+![apple_MVC](./design_pattern_img/model_view_controller_img/apple_MVC.png)
 
 > Apple의 MVC
 

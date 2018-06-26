@@ -10,9 +10,9 @@
 
   
 
-  ![mvvm_1](./model_view_viewmodel_img/mvvm_1.png)
+  ![mvvm_1](./design_pattern_img/model_view_viewmodel_img/mvvm_1.png)
 
-![mvvm_2](./model_view_viewmodel_img/mvvm_2.png)
+![mvvm_2](./design_pattern_img/model_view_viewmodel_img/mvvm_2.png)
 
 [출](http://canapio.tistory.com/43)[처](https://jdub7138.blog.me/220937372865)
 

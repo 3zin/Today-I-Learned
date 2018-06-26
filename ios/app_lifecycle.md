@@ -1,12 +1,15 @@
 # App LifeCycle(앱 생명주기)
 
 - 앱 생명주기란 어플리케이션의 다양한 상태를 정의한 것
-- Swift에서 앱 아이콘을 눌러 앱을 실행시키면 아래와 같은 일들이 일어난다
-  - **UIApplication** 객체를 생성
-  - @UIApplicationMain 어노테이션이 있는 클래스를 찾아 **AppDelegate** 객체를 생성
-  - **Main Event Loop**를 실행(touch, text input등 유저의 액션을 받는 루프) 및 기타 설정. 사용자 입력을 기다림 
 
-<br></br>
+- Swift에서 앱 아이콘을 눌러 앱을 실행시키면 아래와 같은 일들이 일어난다
+
+  1. **UIApplication** 객체를 생성
+
+  2. @UIApplicationMain 어노테이션이 있는 클래스를 찾아 **AppDelegate** 객체를 생성
+  3. **Main Event Loop**를 실행(touch, text input등 유저의 액션을 받는 루프) 및 기타 설정. 사용자 입력을 기다림 
+
+<br>
 
 ## UIApplication
 
@@ -30,7 +33,7 @@
 
 ## The Main Run Loop
 
-![event_draw_cycle_a_2x](./uiapplication_img/event_draw_cycle_a_2x.png)
+![event_draw_cycle_a_2x](./ios_img/app_lifecycle_img/event_draw_cycle_a_2x.png)
 
 
 
@@ -101,7 +104,7 @@ iOS 어플리케이션은 크게 다섯 가지 상태(Life Cycle)로 구성됨.
 
 **<u>UIApplicationDelegate는 이 다섯 가지 상태 사이의 변화를 관리하고 감지하는 메소드를 탑재하고 있음</u>**
 
-![IMG_1008](./uiapplication_img/IMG_1008.PNG)
+![IMG_1008](./ios_img/app_lifecycle_img/IMG_1008.PNG)
 
 
 
@@ -135,7 +138,7 @@ iOS 어플리케이션은 크게 다섯 가지 상태(Life Cycle)로 구성됨.
 
 <br></br>
 
-![good_cycle](./uiapplication_img/good_cycle.jpeg)
+![good_cycle](./ios_img/app_lifecycle_img/good_cycle.jpeg)
 
 -> [Good Diagram !](https://stackoverflow.com/questions/6519847/what-is-the-life-cycle-of-an-iphone-application)
 

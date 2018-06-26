@@ -1,6 +1,6 @@
 # Dispatch
 
-![dispatch](./dispatch_img/dispatch.png)
+![dispatch](./cs_img/dispatch_img/dispatch.png)
 
 - '보내다', '신속히 해결하다'
 - OOP 패러다임 속에서 객체들간의 메시지 전송은 곧 객체들간의 메소드 호출. 바로 이 호출이 dispatch

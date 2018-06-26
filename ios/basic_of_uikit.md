@@ -36,7 +36,7 @@
 
    
 
-   ![uikit_mvc_structure](./basic_of_uikit_img/uikit_mvc_structure.png)
+   ![uikit_mvc_structure](./ios_img/basic_of_uikit_img/uikit_mvc_structure.png)
 
 <u>*Very Good Diagram!*</u>
 

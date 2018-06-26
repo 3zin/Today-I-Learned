@@ -2,7 +2,7 @@
 
 
 
-![router](./routing_img/router.png)
+![router](./design_pattern_img/routing_img/router.png)
 
 ## 라우팅(Routing)이란?
 

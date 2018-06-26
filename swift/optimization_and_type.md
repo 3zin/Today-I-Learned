@@ -1,6 +1,6 @@
 # Optimization and Type
 
-![optimize](./optimization_and_type_img/optimize.jpg)
+![optimize](./swift_img/optimization_and_type_img/optimize.jpg)
 
 <br></br>
 

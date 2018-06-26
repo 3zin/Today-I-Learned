@@ -5,7 +5,7 @@
 - 프레임워크를 이해하는 것은 곧 애플이 의도한 application의 구조를 이해하는 것 
 - iOS의 프레임워크는 기본적으로 다음과 같은 구조로 구성되어 있음
 
-![cocoa_framework](./cocoa_framework_img/cocoa_framework.png)
+![cocoa_framework](./ios_img/cocoa_framework_img/cocoa_framework.png)
 
 
 

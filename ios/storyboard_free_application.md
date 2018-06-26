@@ -1,6 +1,6 @@
 # StoryBoard를 사용하지 않는 iOS 개발
 
-![no_storyboard](./storyboard_free_applciation_img/no_storyboard.png)
+![no_storyboard](./ios_img/storyboard_free_applciation_img/no_storyboard.png)
 
 [image from](https://blog.zeplin.io/life-without-interface-builder-adbb009d2068)
 
