@@ -17,9 +17,13 @@
 
 ## Categories
 
+[Computer Science](https://github.com/3zin/Today-I-Learned/tree/master/cs)
+
 [Design Pattern](https://github.com/3zin/Today-I-Learned/tree/master/design_pattern)
 
 [iOS](https://github.com/3zin/Today-I-Learned/tree/master/ios)
+
+[Swift](https://github.com/3zin/Today-I-Learned/tree/master/swift)
 
 [Study Plan](https://github.com/3zin/Today-I-Learned/tree/master/study_planner)
 
