@@ -15,7 +15,7 @@
 
 - 모든 iOS 어플리케이션은 정확히 하나의 UIApplication 인스턴스를 가지고 있음.
 
-- 어플이 시작될때, 시스템은 **UIApplicationMain(::::)** 함수를 호출하고 이를 통해 Singleton UIApplication 객체가 생성됨
+- 어플이 시작될때, 시스템은 **UIApplicationMain()** 함수를 호출하고 이를 통해 Singleton UIApplication 객체가 생성됨
 
   > iOS는 Obj-C 기반이기 때문에 당연히 main 함수가 있지만, 이는 UIKit에 의해 관리되기 때문에 직접 접근할 수 없음
   >
@@ -72,8 +72,8 @@
 
 - AppDelegate 클래스는 UIApplicationDelegate 프로토콜을 따르며 추가적인 중요한 **<u>런타임 이벤트</u>**를 처리함. 필요할 경우 개발자가 Optional하게 메소드를 만들어서 사용하면 됨. (유용한 것들이 많음)
 - UIApplication은 서브클래싱 할 필요도 없고 하기도 어려움. 하지만 그대로 사용하는 것에는 한계가 있기 때문에, UIApplication 객체는 AppDelegate라는 대리 객체를 내세우고 커스텀 코드를 처리할 수 있도록 권한을 부여합니다.
-- Xcode는 모든 프로젝트에 대해 생성시 app delegate 클래스 역시 singleton 객체로 자동으로 만들어줌 Appdelegate.swift 파일이 곧 app delegate 객체가 됨
-- 클래스 선언부에 붙은 @UIApplicationMain 에 의해, 앱이 구동되면 UIApplication 객체는 AppDelegate.swift의 **AppDelegate** 클래스를 델리게이트 객체로 지정하고 **Main Run Loop에서 발생하는 이벤트를 감지하여 전달함.**
+- Xcode는 프로젝트 생성시 app delegate 클래스 singleton 객체를 자동으로 만들어줌 Appdelegate.swift 파일이 곧 app delegate 객체가 됨
+- 클래스 선언부에 붙은 @UIApplicationMain 에 의해, 앱이 구동되면 UIApplication 객체는 AppDelegate.swift의 **AppDelegate** 클래스 를 델리게이트 객체로 지정하고 **Main Run Loop에서 발생하는 이벤트를 감지하여 전달함.**
 - AppDelegate는 다음과 같은 중요한 작업을 담당함 
 
 <br></br>
@@ -97,7 +97,7 @@
 
 ### 2. 어플리케이션 상태 변화 관리
 
-- UIApplication이 어플을 관리하는 대부분의 underlying 역할을 한다면, Application Delegate는 여기에 더해 어플의 전체적인 런타임 behavior과 어플의 각각의 '상태'에 접근하는 통로를 제공함. 
+- UIApplication이 어플에서 underlying 역할을 한다면, Application Delegate는 여기에 더해 어플의 전체적인 런타임 behavior과 어플의 각각의 '상태'에 접근하는 통로를 제공함. 
 - AppDelegate의 메소드는 시스템 라이프사이클 내 중요한 변화 알림(notification)들을 받기 위한 유일한 통로
 
 iOS 어플리케이션은 크게 다섯 가지 상태(Life Cycle)로 구성됨. 
@@ -120,21 +120,21 @@ iOS 어플리케이션은 크게 다섯 가지 상태(Life Cycle)로 구성됨.
 
 3. **Active**: 일반적으로 앱이 돌아가는 상태
 
-   > applicationDidBecomeActive(_:) - 앱이 active상태가 되어 실행 중일 때
+   > applicationDidBecomeActive(_:) - 앱이 active상태가 되어 실행 중일 때 실행
 
 4. **Background**: 앱이 Suspended(유예 상태) 상태로 진입하기 전 거치는 상태. 어플리케이션이 코드를 진행하고 있지만 화면에 보이지 않는 상황. 경우에 따라 (최소한의)백그라운드 작업을 해야 할 경우도 있음. 
 
    > applicationDidEnterBackground(_:)  - 앱이 background 상태일 때 실행 
 
-   > applicationWillResignActive(_:) - Called when leaving the foreground state.
+   > applicationWillResignActive(_:) - 어플리케이션이 foreground에서 벗어날 때 실행 (즉, 화면에서 없어질 때)
    >
-   > applicationWillEnterForeground(_:) - Called when transitioning out of the background state.
+   > applicationWillEnterForeground(_:) - 어플리케이션이 background나 suspend에서 다시 foreground로 돌아올 때  
 
 5. **Suspended**: 앱이 메모리에 있으나, 아무 코드도 실행하지 않는 상태, 시스템이 Background 상태의 앱 중 처리해야 할 일이 없는 앱을 Suspended 상태로 만들고 적절히 not running 상태로 만들어 프로세스를 kill하고 메모리에서 해지함. Suspended에서 Not Running 상태로 넘어갈 때는 알림을 받을 수 없음. 
 
-   > applicationWillTerminate(_:) - Called only when the app is running(background). This method is not called if the app is suspended
+   > applicationWillTerminate(_:) - 오직 어플리케이션이 백그라운드에서 구동중일 때 종료될 경우에만(?) 호출됨. Suspend 상황에서 메모리 확보를 위해 자동으로 종료될 경우에는 호출되지 않음. 
 
-* Foreground : InActive + Active 
+* *Foreground : InActive + Active*
 
 <br></br>
 
@@ -152,15 +152,15 @@ iOS 어플리케이션은 크게 다섯 가지 상태(Life Cycle)로 구성됨.
 
   - 백그라운드 다운로드가 필요한 어플이 존재할 경우, 다운로드 시작 시점을 정하기 위해
 
-  - > application(_:performFetchWithCompletionHandler:)
+  - >  application(_:performFetchWithCompletionHandler:)
 
   - URLSession을 통해 백그라운드 다운로드를 하는 어플일 경우, 다운로드 완료 시점을 확인하기 위해
 
-  -  application(_:handleEventsForBackgroundURLSession:completionHandler:)
+    >  application(_:handleEventsForBackgroundURLSession:completionHandler:)
 
   - 시스템 메모리가 부족할 때
 
-  - > applicationDidReceiveMemoryWarning(_:) 
+    > applicationDidReceiveMemoryWarning(_:) 
 
     > (The app notifies its view controllers separately so the app delegate should use this notification to remove references to objects and data not managed directly by a view controller)
 
