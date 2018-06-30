@@ -1,9 +1,9 @@
 # Today-I-Learned
-> Today-I-Learned
+Today-I-Learned
 
 오늘 배운 것을 올린다
 
----
+<br>
 
 ## Rules
 
@@ -13,7 +13,7 @@
 - Commit with the exact date
 - Do not just copy other's word. Must write down in **ORGANIZED AND REVISED FORM** 
 
-
+<br>
 
 ## Categories
 
@@ -27,6 +27,7 @@
 - [Database in iOS](https://github.com/3zin/Today-I-Learned/blob/master/database/database_in_ios.md)
 - [RDBMS (Relational Database Management System)](https://github.com/3zin/Today-I-Learned/blob/master/database/rdbms.md)
 - [SQL](https://github.com/3zin/Today-I-Learned/blob/master/database/sql.md)
+- [JSON](https://github.com/3zin/Today-I-Learned/blob/master/database/json.md)
 
 [Design Pattern](https://github.com/3zin/Today-I-Learned/tree/master/design_pattern)
 
@@ -45,11 +46,18 @@
 - [Cocoa Framework](https://github.com/3zin/Today-I-Learned/blob/master/ios/cocoa_framework.md)
 - [Storyboard Free Application](https://github.com/3zin/Today-I-Learned/blob/master/ios/storyboard_free_application.md)
 
+[Server](https://github.com/3zin/Today-I-Learned/tree/master/server)
+
+- [HTTP](https://github.com/3zin/Today-I-Learned/blob/master/server/http.md)
+- [HTTPS](https://github.com/3zin/Today-I-Learned/blob/master/server/https.md)
+
 [Swift](https://github.com/3zin/Today-I-Learned/tree/master/swift)
 
 - [Optimization and Type](https://github.com/3zin/Today-I-Learned/blob/master/swift/optimization_and_type.md)
 
 [Study Plan](https://github.com/3zin/Today-I-Learned/tree/master/study_planner)
+
+<br>
 
 ## Inspired By
 
