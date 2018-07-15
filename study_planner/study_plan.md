@@ -77,3 +77,15 @@
 
 - 이제 종강도 했고 공연도 끝났으니 이제 다시 공부를 진행한다
 - 평소에는 개발자 문서를 읽고 얼른 재은씨를 끝내고 인터넷에 있는 디자인 패턴 예시 프로젝트를 짜보자 
+
+---
+
+> 2018.7.15.
+
+- 배운 것
+  - 통신 개념 일반 (Alamofire, 어답터, 보안, 쿠키)
+  - Core Data 일반
+  - App Extension
+  - iOS Application File System
+  - Application Structure and basic Design Pattern
+  - XCodes 사용법
